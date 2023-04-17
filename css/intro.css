@@ -1,0 +1,156 @@
+*, ::before, ::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html{
+  background: rgb(20,0,20);;
+}
+
+body{
+  background: rgb(20,0,20);
+  background: linear-gradient(0deg, rgba(20,0,20,1) 0%, rgba(4,1,2,0.8863636363636364) 39%, rgba(43,5,35,0.8681818181818182) 68%);
+}
+
+.container {
+  max-width: 1000px;
+  min-height: 600px;
+  margin: 0 auto;
+  padding: 50px;
+}
+
+.slider div {
+  max-width: 100%;
+  min-height: 500px;
+  display: none;
+}
+
+
+
+div.active {
+  display: block;
+  justify-self: center;
+  justify-self: center;
+  animation: fade 1.5s;
+}
+
+@keyframes fade {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.cont-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+}
+
+.btn-nav {
+  position : absolute;
+  top: 70%;
+  right: 47%;
+  font-size: 80px;
+  margin: 0 15px;
+  cursor: pointer;
+  color: aliceblue;
+  background-color: transparent;
+  border: none;
+
+}
+
+
+span{
+  animation: blinker 1s linear infinite;
+}
+
+@keyframes blinker{
+  50%{
+    opacity: 0;
+  }
+}
+
+
+
+
+/* APPARENCE */
+ ul{
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 20px;
+  color: white;
+  font-weight: 600;
+  margin-top: 100px;
+ }
+
+ li{
+  margin-bottom: 20px;
+ }
+
+h1{
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 50px;
+  font-weight: 700;
+  color: white;
+  text-align: center;
+  margin-bottom: 50px;
+  margin-top: 50px;
+}
+
+.titre{
+  margin-top: 150px;
+}
+
+.bouton-passer{
+  background-color: aliceblue;
+  border-radius: 30px;
+  padding: 5px 20px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+  margin-left: 90%;
+  border: none;
+}
+
+img{
+  margin: auto;
+  display: block;
+}
+
+.bouton-allumer{
+  background-color: aliceblue;
+  border-radius: 30px;
+  padding: 15px 25px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 25px;
+  font-weight: 500;
+  margin : auto;
+  margin-top: 150px;
+  display: block;
+  border: none;
+}
+
+p{
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  text-align: center;
+  margin: 100px;
+  font-size: 20px;
+  font-weight: 15px;
+  color: aliceblue;
+  line-height: 30px;
+}
+
+.bash{
+  font-weight: bold;
+  line-height: 50px;
+}
+

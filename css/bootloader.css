@@ -1,0 +1,24 @@
+body {
+    background-color: black;
+    color: white;
+  }
+  
+  h1 {
+    color:white;
+  }
+
+  span{
+    color:rgb(0, 255, 21);
+  }
+
+  #fail{
+    color:red;
+  }
+  .line {
+    opacity: 0;
+  }
+  
+  .line.show {
+    opacity: 1;
+  }
+  

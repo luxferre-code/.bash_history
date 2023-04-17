@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>.bash_history | Ingame</title>
+    <link rel="stylesheet" href="./css/game.css">
+</head>
+<body>
+    <div class="title">
+        <h1 style="margin-top: 0px;" class="title-name">Terminal</h1>
+    </div>
+    <h2>Type "help" for help. Tape man [commandName] to have the documentation.</h2>
+    <div id="terminal-window">
+        <h3>"Qui suis-je ? Dès que tu le sais, fais la commande unlock"</h3>
+        <p id="command-line">[*****@archlinux] ~ : <input type="text" name="input" class="input" onkeypress="userInput(event);"></p>
+    </div>
+
+    <div id="indice">
+        <!-- Créer une boite dans le html ou le code javascript va ecrire-->
+        <p id="indiceTexte"></p>
+
+    </div>
+
+    <img src="https://imgs.search.brave.com/0VKILPb-gUR50KMVPEM9bfN-N_HVdQ_zEpJ2kd4jXIY/rs:fit:1200:1200:1/g:ce/aHR0cDovL3BsdXNw/bmcuY29tL2ltZy1w/bmcvc2VhcmNoLWJ1/dHRvbi1wbmctc2Vh/cmNoLWljb24tdGhp/cy1pY29uLWlzLXN1/cHBvc2VkLXRvLXJl/cHJlc2VudC1hLW1h/Z25pZnlpbmctZ2xh/c3MtaXQtcy1hLWxh/cmdlLXBuZy01MC1w/eC0xNjAwLnBuZw" alt="Indice ?" width="64" height="64" onclick="indiceSwitch()" id="btnIndice">
+    <img src="https://imgs.search.brave.com/s2SXDCcVfy0P9BYINtTOdlC2UiC58RT7KEjw6FpkWOo/rs:fit:256:256:1/g:ce/aHR0cDovL3d3dy5p/Y29uZS1wbmcuY29t/L3BuZy8yMi8yMTU2/NS5wbmc" alt="Quiter l'indice !" width="64" height="64" onclick="indiceSwitch()" id="quitIndice">
+    <script src="./js/game.js"></script>
+</body>
+</html>

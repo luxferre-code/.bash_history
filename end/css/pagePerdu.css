@@ -1,0 +1,97 @@
+body{
+  margin:0;
+}
+.fond img{
+  height: 100vh;
+  width: 100vw;
+  position: absolute;
+}
+  
+.etincelles{
+  position: fixed;
+  height: 24vh;
+  rotate: -30deg;
+  top: 40%;
+  right: 65%;
+  animation: 0.15s move linear infinite;
+}
+@keyframes move{
+  from{
+    filter: grayscale(0%);
+    opacity: 00%;}
+  to{
+    filter: grayscale(100%);
+    opacity: 100%;}
+}
+.anim{
+  position:fixed;
+  width: 40vw;
+  height: 60vh;
+  margin-left: 7vw;
+  margin-top: 15vh;
+}
+img.fumee{
+  position:fixed;
+  margin: auto;
+  width: 25vw;
+  margin-top: -33vh;
+  margin-left: 9vw;
+  filter: blur(4px);
+  opacity: 50%;
+}
+img.feu{
+  display: none;
+  /*
+  width: 15vw;
+  filter: grayscale(75%) blur(1px);
+  rotate: -10deg;
+  margin-top: 15vh;
+  margin-left: 13vw;
+  opacity: 60%;*/
+}
+
+
+@keyframes slidein {
+  /*from { transform: scaleX(0); }
+  to   { transform: scaleX(1); }*/
+  from { margin-top:45vh; } to { margin-top:40vh; }
+}
+@keyframes anim2{
+  from{
+   filter: blur(10px);
+   opacity: 0%;
+    margin-top: -200px;
+  }
+  to{
+    filter: blur(0);
+    opacity: 100%;
+    margin-top: 0px;
+  }
+}
+.texte{
+  margin-left: 15vw;
+  width: 70%;
+  text-align: center;
+  font-family: courrier;
+  position: fixed;
+  color: rgba(175,240,215,90%);
+  animation: 2s linear anim2;
+  /*box-shadow: 5px 5px 10px black;*/
+}
+
+.texte h3{
+  font-size: 4vw;;
+  font-weight: lighter;
+  margin-top: 10vh;
+}
+
+.texte p{
+  font-size: 2vw;
+}
+
+
+
+
+
+
+

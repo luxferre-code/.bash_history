@@ -1,0 +1,33 @@
+
+body{
+  margin:20px;
+  font-size: 9.4pt;
+  font-family: "trebuchet ms";
+}
+h1{
+  font-weight: normal;
+  font-size: 2em;
+}
+h2{
+  margin-top:25px;
+ font-size: 2em;
+ font-weight:bold;
+ letter-spacing:-1px;
+ color: #184366;
+}
+p{
+  font-size: 1.2em;
+  line-height: 30px;
+  margin-left: 15px;
+}
+code{
+  color: white;
+  background-color: rgba(40,40,40);
+  padding: 2px;
+  padding-right: 5px;
+  padding-left: 5px;
+  border-radius: 8px;
+}
+.arbre>p{
+  line-height:15px;
+}

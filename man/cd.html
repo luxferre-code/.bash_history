@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <title>Man cd</title>
+  <link rel="stylesheet" href="./base.css">
+</head>
+<body>
+    <h1>man cd</h1>
+    <h2>NOM</h2>
+    <p>cd - change le répertoire de travail</p>
+    <h2>SYNOPSIS</h2>
+    <p><code>cd [chemin du répertoire]</code></p>
+    <h2>DESCRIPTION</h2>
+    <p>La commande cd permet de changer le répertoire de travail du terminal pour un autre répertoire donné<br>
+        <code>/</code> est utilisé pour séparé les répertoire du chemin donné<br>
+        <code>./</code> signifie le répertoire courant<br>
+        <code>../</code> signifie le répertoire parent du répertoire courant<br>
+    </p>
+    <h2>EXEMPLE</h2>
+    <div class="arbre">
+        <p>
+        user<br>
+        |<br>
+        |-----dossier1<br>
+        |<br>
+        |-----dossier2<br>
+        |<span STYLE="padding:0 0 0 40px;"></span>|<br>
+        |<span STYLE="padding:0 0 0 40px;"></span>|-----dossier3<br>
+        <br>
+    </p>
+    </div>
+    <p>
+        Ici la commande <code>cd user/dossier1</code> place le terminal dans dossier1<br>
+        Depuis dossier1, la commande <code>cd ../dossier2/dossier3</code> place le terminal dans dossier3<br>
+    </p>
+
+</body>
+</html>

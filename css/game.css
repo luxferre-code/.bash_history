@@ -1,0 +1,77 @@
+body {
+    background-color: rgb(20, 0, 20);
+    color: white;
+    font-family: monospace;
+    font-size: 14px;
+    line-height: 1.42857143;
+    margin: 0;
+    padding: 0;
+}
+
+.title {
+    background-color: rgba(0, 0, 0, 0.75);
+    color: #ffffff;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+#command-line {
+    color: #ffffff;
+    font-size: 12px;
+    font-weight: bold;
+    text-align: left;
+    border-radius: 1rem;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+}
+
+.input {
+    /* Faire que l'input soit invisible pour l'utilisateur mais qu'il puissent écrire*/
+    background-color: #00000000;
+    border: none;
+    color: white;
+    border-radius: 0rem;
+    box-sizing: border-box;
+    width: 80%;
+}
+
+.input:focus {
+    outline: none;
+}
+
+img {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+}
+
+/* Indice */
+
+.indice {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.75);
+    color: #ffffff;
+    font-size: 12px;
+    font-weight: bold;
+    text-align: left;
+    border-radius: 1rem;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    display: none;
+}
+
+.indiceTexte {
+    width: 100%;
+    height: 100%;
+    color: #ffffff;
+    font-size: 12px;
+    font-weight: bold;
+    text-align: left;
+    border-radius: 1rem;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+}

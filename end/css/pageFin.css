@@ -1,0 +1,93 @@
+body{
+  margin:0;
+  display:flex;
+}
+.fond img{
+  height: 100vh;
+  width: 100vw;
+  position: relative;
+}
+.ordi img{
+  opacity: 0%;
+  position:fixed;
+  height: 15vh;
+  width: auto;
+  left:45%;
+  animation: 3s linear 1s infinite alternate slidein;
+}
+.ordi .aura{
+  width: 20vw;
+}
+@keyframes slidein {
+  from { 
+   margin-top:45vh;
+  filter: blur(8px);
+   opacity: 0%;}
+  to { 
+   margin-top:40vh;
+  filter: blur(0);
+    opacity: 100%;}
+}
+@keyframes anim2{
+  from{
+   filter: blur(10px);
+   opacity: 0%;
+    margin-top: -200px;
+  }
+  to{
+    filter: blur(0);
+    opacity: 100%;
+    margin-top: 0px;
+  }
+}
+
+
+
+.texte{
+  position: absolute;
+  margin-left: 15vw;
+  width: 70%;
+  text-align: center;
+  font-family: courrier;
+  color: rgba(175,240,215,90%);
+  animation: 1.5s linear anim2;
+  /*box-shadow: 5px 5px 10px black;*/
+}
+
+.texte h3{
+  font-size: 4vw;;
+  font-weight: lighter;
+  margin-top: 10vh;
+}
+
+.texte p{
+  font-size: 2vw;
+}
+
+
+
+
+
+
+.slider-content {
+  display: flex;
+  position: relative;
+  width: 300vw;
+  height: 100vh;
+  animation: slider infinite alternate 120s;
+  
+}
+.slider>.slider-content>* {
+   width: 300vw;
+   height: 100vh;
+    opacity: 40%;
+  filter: blur(1px);
+}
+@keyframes slider {
+  0% {
+    left: -120vw;
+  }
+  100% {
+    left: -240vw;
+  }
+}
